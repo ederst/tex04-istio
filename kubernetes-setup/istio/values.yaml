@@ -440,8 +440,8 @@ security:
 #
 telemetry-gateway:
   gatewayName: ingressgateway
-  grafanaEnabled: false
-  prometheusEnabled: false
+  grafanaEnabled: true
+  prometheusEnabled: true
 
 grafana:
   enabled: true
