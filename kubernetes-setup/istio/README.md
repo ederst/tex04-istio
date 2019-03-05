@@ -25,6 +25,15 @@ This is a quick and dirty description of how to install and use this repo.
         istio-<istio_version>/install/kubernetes/helm/istio
     ```
 
+    If something changed in `values.yaml`, try upgrading it by:
+
+    ```bash
+      helm upgrade \
+        -f values.yaml \
+        istio \
+        istio-<istio_version>/install/kubernetes/helm/istio
+    ```
+
 1) Deploy secrets
 
     * Otherwise grafana and kiali deployments are not working (or deactivate authentication in `values.yaml`).
