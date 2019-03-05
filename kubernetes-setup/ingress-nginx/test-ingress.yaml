@@ -1,0 +1,14 @@
+---
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-nginx-ingress
+spec:
+  rules:
+  - host: this.is-so-co.ol
+    http:
+      paths:
+      - backend:
+          serviceName: nginx
+          servicePort: 80
