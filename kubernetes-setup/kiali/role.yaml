@@ -1,0 +1,12 @@
+
+kind: Role 
+apiVersion: rbac.authorization.k8s.io/v1beta1 
+metadata: 
+ name: kiali-service-account-role 
+rules: 
+- apiGroups: ["", "authentication.istio.io", "rbac.istio.io"]
+  resources: 
+  - "policies"
+  - "serviceroles"
+  - "servicerolebindings"
+  verbs: ["*"]
