@@ -65,8 +65,5 @@ Details:
 
 ## Do scenarios and stuff
 
-### Traffic management
-
-
-```
-```
+* [Istio demos](https://istio.io/docs/tasks/)
+* [Presentation demos](../../notes/01-demo-time.md)

@@ -9,6 +9,8 @@ kubectl apply -f istio-1.0.6/samples/bookinfo/networking/virtual-service-all-v1.
 * edit virtual service `reviews` to use `v2` 
 * edit virtual service `reviews` to use `v4` -> this will increase error rate
 
+* make new feature available for json
+
 ```shell
 kubectl apply -f istio-1.0.6/samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml
 ```
