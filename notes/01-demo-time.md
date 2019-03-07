@@ -137,13 +137,15 @@ spec:
 
 Rate limit configuration is split into 2 parts.
 
-* Client Side
-  * "QuotaSpec" defines quota name and amount that the client should request.
-  * "QuotaSpecBinding" conditionally associates QuotaSpec with one or more services.
-* Mixer Side
-  * "quota instance" defines how quota is dimensioned by Mixer.
-  * "memquota adapter" defines memquota adapter configuration.
-  * "quota rule" defines when quota instance is dispatched to the memquota adapter.
+> * Client Side
+>   * `QuotaSpec` defines quota name and amount that the client should request.
+>   * `QuotaSpecBinding` conditionally associates QuotaSpec with one or more services.
+> * Mixer Side
+>   * "quota instance" defines how quota is dimensioned by Mixer.
+>   * "memquota adapter" defines memquota adapter configuration.
+>   * "quota rule" defines when quota instance is dispatched to the memquota adapter.
+>
+> Source: [Istio Rate Limiting](https://istio.io/docs/tasks/policy-enforcement/rate-limiting/#rate-limits)
 
 ```shell
 kubectl apply -f istio-1.0.6/samples/bookinfo/networking/virtual-service-all-v1.yaml
